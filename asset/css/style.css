@@ -1,11 +1,89 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    font-size: 1.6rem;
+body {
+  font-size: 1.6rem;
+  font-family: "Sen", serif;
+}
+
+/* ======common====== */
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  width: calc(100% -48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 16px;
+  min-width: 118px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.6rem;
+  background: #171100;
+  border-radius: 24.6px;
+}
+/* ======header====== */
+.header.fixed{
+  position: sticky;
+  top:-28px;
+}
+
+.header{
+  background: #FFFCF4;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+.nav li.active a,
+.nav a:hover {
+  color: #171100;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li.active a::after {
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  content: "";
+  display: block;
+  width: 0.75rem;
+  height: 0.125rem;
+  border-radius: 0.0625rem;
+  background: #171100;
+}
+
+.header.btn-sign-up{
+  min-width: 9rem;
+}
+
+.header .action{
+  margin-left: 49px;
 }
