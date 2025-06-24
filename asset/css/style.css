@@ -408,50 +408,52 @@ a {
 }
 
 /* ======feedback====== */
-.feedback {
+.feed-back {
   margin-top: 135px;
+  padding: 96px 0px;
   background: #2e2100;
-  padding: 96px 0;
 }
 
-.feedback-item {
+.feed-back .feedback-item {
   display: flex;
+  justify-content: space-between;
 }
 
-.avatar {
+.feedback-item .avatar {
   width: 72px;
   height: 72px;
-  border-radius: 72px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
-.feedback-item .info .meber-name {
-  margin-top: 16px;
+.feedback-item .info .member-name {
+  margin-top: 18px;
   color: #f7f7f7;
   font-family: var(--font-heading);
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.42;
+  max-width: 130px;
 }
 
 .feedback-item .info .desc {
-  margin-top: 4px;
   color: #bfbcb2;
   font-size: 1.4rem;
   line-height: 1.86;
+  margin-top: 4px;
 }
 
 .feedback-item .info .dots {
-  margin-top: 28px;
   display: flex;
   gap: 6px;
 }
 
-.feedback-item .info .dots .dot {
-  background-color: #634700;
+.feedback-item .info .dot {
   width: 6px;
   height: 6px;
+  background-color: #634700;
   border-radius: 50%;
+  margin-top: 28px;
   cursor: pointer;
 }
 
@@ -461,19 +463,13 @@ a {
 }
 
 .feedback-item .content {
-  width: 770px;
-  margin-left: auto;
+  width: 66%;
 }
 
-.feedback-item .content .open-quotes {
-  width: 30px;
-  height: 28px;
-}
-
-.feedback-item .content .blockquote {
-  margin-left: 30px;
+.feedback-item .content blockquote {
   color: #fff;
   font-size: 2.6rem;
   font-style: italic;
   line-height: 1.54;
+  /* margin-left: 30px; */
 }
